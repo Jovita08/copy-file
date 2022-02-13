@@ -34,7 +34,7 @@ End of the Program.
 
 
 ## PROGRAM:
-
+```
 #Program to count the no.of lines in a file using command line arguments.
 #Developed by: virgil jovita.a
 #RegisterNumber: 21500600
@@ -46,7 +46,7 @@ for data in fp:
     for line in lines:
         words += 1
 print("Total No.of Words:",words)
-
+```
 ### OUTPUT:
 
 ![output](o1.png)
