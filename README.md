@@ -1,54 +1,56 @@
-# copy-file
+# command-line-arguments-to-count-word
 ## AIM:
-To write a python program for copying the contents from one file to another file.
+To write a python program for getting the word count from the contents of a file using command line arguments.
 ## EQUIPEMENT'S REQUIRED: 
 PC
 Anaconda - Python 3.7
 ## ALGORITHM: 
 ### Step 1:
-From shutil import copyfile
 
-From sys import exit
+Import sys module to use command line arguments.
 
 ### Step 2: 
  
- Take users the name of source and destination files.
+ Use the open() by getting the file name with "sys.argv[1]" which means the first index of given argument
 ### Step 3: 
 
-If the source there is a source file then copy the contents of source file to the destination file.
-### Step 4:  
-Read each line from the input file and write it into the output file.
+Iterate the content of the file using for loop.
 
+### Step 4:  
+
+Split the contents into each line using .split() function.
 
 ### Step 5: 
 
-
-Then print
+Iterate the list of lines and increment the value of variable (word) each time.
 
 ### Step 6: 
 
-End the program
+Run the program by giving "python prgm.py EX12.txt" on the terminal.
+
+### Step 7:
+
+End of the Program.
+
 
 ## PROGRAM:
 
-```
-
-## DEVELOPED BY: virgil jovita.a
-## REGISTER NUMBER: 212221240062
-#Program to copy content from one file to another.
-with open("file1.txt","r") as f1:
-    content = f1.read()
-with open("file2.txt","w") as f2:
-    f2.write(content)
-
-```
+#Program to count the no.of lines in a file using command line arguments.
+#Developed by: virgil jovita.a
+#RegisterNumber: 21500600
+import sys
+fp = open(sys.argv[1])
+words = 0
+for data in fp:
+    lines=data.split()
+    for line in lines:
+        words += 1
+print("Total No.of Words:",words)
 
 ### OUTPUT:
 
-
-![output](.//h1.png)
-
+![output](o1.png)
 
 
 ## RESULT:
-Thus the program is written to copy the contents from one file to another file.
+Thus the program is written to find the word count from the contents of a file using command line arguments.
